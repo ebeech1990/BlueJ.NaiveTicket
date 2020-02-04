@@ -77,8 +77,8 @@ it is public is default
 	* Look at the class definition in Code 2.1 and use this knowledge, along with the additional information about ordering we have given you, to try to make a list of the names of the fields, constructors, and methods in the `TicketMachine` class.
 	* Hint: There is only one constructor in the class.
 	
-fields - price, balance, total, ticketNumber
-constructor - TicketMachine
+fields - price, balance, total, ticketNumber<br>
+constructor - TicketMachine<br>
 methods - getPrice, getTicketNumber, getBalance, insertMoney, calculateTotal, incrementTicketNumber, printTicket
 
 ### Exercise 2.10
