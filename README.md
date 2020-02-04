@@ -14,6 +14,11 @@ Work through all these exercises. You edit this file with your answers for these
 * Use `insertMoney` method to simulate inserting an amount of money into the machine.
 * Use `getBalance` to check that the machine has a record of the amount inserted.
 	* You can insert several separate amounts of money into the machine, just like you might insert multiple coins or notes into a real machine. Try inserting the exact amount required for a ticket. As this is a simple machine, a ticket will not be issued automatically, so once you have inserted enough money, call the `printTicket` method. A facsimile ticket should be printed in the BlueJ terminal window.
+	
+made price 500
+inserted 500
+printed ticket
+"ticket price: 500 cents. your total is 500"
 
 ### Exercise 2.2
 * What value is returned if you check the machine’s balance after it has printed a ticket?
@@ -26,7 +31,8 @@ Value is 0
 	* What happens if you insert too much money into the machine – do you receive any refund?
 	* What happens if you do not insert enough and then try to print a ticket?
 	
-No refund but total sums 
+prints ticket with no errors even if not enough money inserted or too much
+keeps an accurate running total
 
 ### Exercise 2.4
 * Try to obtain a good understanding of a ticket machine’s behavior by interacting with it on the object bench before we start looking at how the `TicketMachine` class is implemented in the next section.
@@ -64,7 +70,7 @@ yes and mark area with red
 ### Exercise 2.8
 * Check whether or not it is possible to leave out the word `public` from the outer wrapper of the `TicketMachine` class.
 
-it is
+it is public is default
 
 ### Exercise 2.9
 * From your earlier experimentation with the ticket machine objects within BlueJ you can probably remember the names of some of the methods – `printTicket`, for instance.
@@ -79,6 +85,7 @@ methods - getPrice, getTicketNumber, getBalance, insertMoney, calculateTotal, in
 * Do you notice any features of the constructor that make it significantly different from the other methods of the class?
 
 has the same name as the class
+no return type
 
 ### Exercise 2.11
 * What do you think is the type of each of the following fields?
@@ -119,7 +126,7 @@ yes
 	* Does the appearance of the class diagram after each change give you a clue as to whether or not other orderings are
 possible?
 
-yes
+yes won't compile and marks with red
 
 	* Check by pressing the compile button to see if there is an error message.
 	* Make sure that you reinstantiate the original version after your experiments!
